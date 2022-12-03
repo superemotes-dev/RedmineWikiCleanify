@@ -1,0 +1,82 @@
+/*load the default redmine stylesheet*/
+@import url(../../../stylesheets/application.css);
+:root {
+	--main-header-border-bottom-thickness: 1px;
+	--main-header-border-bottom-style: solid;
+	--main-header-border-bottom-color: rgb(238, 238, 238);
+	--main-header-border-bottom-spacing: 0px 0px;
+	--main-header-padding: 0.3rem;
+	--main-header-font-size: 2.25rem;
+	--main-header-line-height: 1.2;
+	
+	--secondary-header-font-size: 1.75rem;
+	--secondary-header-line-height: 1.225;
+
+	--tertiary-header-font-size: 1.5rem;
+	--tertiary-header-line-height: 1.43;
+
+	--header-color: rgba(0, 0, 0, 0.87);
+	--header-margin-bottom: 1rem;
+	--header-font-weight: 700;
+	--header-line-height: 1.4;
+	--header-min-height: 1rem;
+	--text-element-padding: 0;
+}
+
+h1:first-of-type, h2:first-of-type, h3:first-of-type, h4:first-of-type, h5:first-of-type, h6:first-of-type {
+	margin-top: 0;
+}
+
+.wiki h1, .wiki h2 {
+	padding-bottom: var(--header-padding-bottom);
+	border-bottom-color: var(--main-header-border-bottom-color);
+	border-bottom-style: var(--main-header-border-bottom-style);
+	border-bottom-width: var(--main-header-border-bottom-thickness);
+}
+
+.wiki h1 {
+	font-size: var(--main-header-font-size);
+	line-height: var(--main-header-line-height);
+	margin-bottom: var(--header-margin-bottom);
+	font-weight: var(--header-font-weight);
+	line-weight: var(--header-line-weight);
+	min-height: var(--header-min-height);
+}
+
+.wiki h2 {
+	font-size: var(--secondary-header-font-size);
+	line-height: var(--secondary-header-line-height);
+}
+
+.wiki h3 {
+
+	font-size: var(--tertiary-header-font-size);
+	line-height: var(--tertiary-header-line-height);
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji, Twemoji Mozilla; 	
+}
+
+.wiki * {
+	padding: 0;
+}
+
+h1 h2 h3 h4 h5 h6 {
+	font-size: 1.75em;
+	line-height: 1.225;
+}
+
+.wiki h1 {
+
+}
+
+
+code {
+	padding: .2em .3em;
+	margin: 0;
+	font-size: 85%;
+	background-color: rgba(0,0,0,.04);
+	border-radius: 3px;
+}
